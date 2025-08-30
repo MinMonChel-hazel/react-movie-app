@@ -15,19 +15,19 @@ export default function Navbar() {
 
       <nav className="flex gap-6 nav_items">
         <DarkMode />
-        <a href="#" className="flex items-center gap-1.5">
+        <a href="#now_playing" className="flex items-center gap-1.5">
           <span className="text-md">Now Playing</span>
           <img src={Latest} alt="" className="w-5 h-5" />
         </a>
-        <a href="#" className="flex items-center gap-1.5">
+        <a href="#popular" className="flex items-center gap-1.5">
           <span className="text-md">Popular</span>
           <img src={Popular} alt="" className="w-5 h-5" />
         </a>
-        <a href="#" className="flex items-center gap-1.5">
+        <a href="#top_rated" className="flex items-center gap-1.5">
           <span className="text-md">Top Rated</span>
           <img src={TopReated} alt="" className="w-5 h-5" />
         </a>
-        <a href="#" className="flex items-center gap-1.5">
+        <a href="#upcoming" className="flex items-center gap-1.5">
           <span className="text-md">Upcoming</span>
           <img src={TopReated} alt="" className="w-5 h-5" />
         </a>

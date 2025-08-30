@@ -6,6 +6,10 @@
   --font-sans: "Kantumruy Pro", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --body_background: #101010;
   --body_color: #032541;

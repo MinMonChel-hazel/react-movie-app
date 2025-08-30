@@ -1,10 +1,9 @@
 import React, { use, useEffect } from "react";
 import { useState } from "react";
 import MovieCard from "./MovieCard";
-import Popular from "../../assets/fire.png";
 import _, { set } from "lodash";
 
-export default function MoviesList() {
+export default function MoviesList({ type, title, emoji }) {
   const [movies, setMovies] = useState([]);
   const [filteredMovies, setFilteredMovies] = useState([]);
   const [rating, setRating] = useState(0);
@@ -25,7 +24,7 @@ export default function MoviesList() {
 
   const fetchMovies = async () => {
     const res = await fetch(
-      "https://api.themoviedb.org/3/movie/popular?api_key=a44c33acdb4d4bb43a6290daabfe5c24"
+      `https://api.themoviedb.org/3/movie/${type}?api_key=a44c33acdb4d4bb43a6290daabfe5c24`
     );
     const data = await res.json();
     setMovies(data.results);
@@ -58,11 +57,13 @@ export default function MoviesList() {
   }, [sort]);
 
   return (
-    <section>
+    <section id={type}>
       <div className="px-4 py-4 flex flex-col md:flex-row justify-between items-center">
         <div className="flex items-center gap-2">
-          <h3 className="text-2xl font-semibold">Popular</h3>
-          <img src={Popular} alt="" className="w-6 h-6" />
+          <a href="#" className="cursor-pointer">
+            <h3 className="text-2xl font-semibold">{title}</h3>
+          </a>
+          <img src={emoji} alt={`${type} icon`} className="w-6 h-6" />
         </div>
         <div className="flex gap-4 items-center">
           <ul className="flex gap-4">
