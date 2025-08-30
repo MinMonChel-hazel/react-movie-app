@@ -3,7 +3,7 @@ import { BiSearch } from "react-icons/bi";
 
 export default function Search() {
   return (
-    <div className="relative bg-[#f5f5f5]">
+    <div className="relative bg-[#edeaea]">
       <input
         type="text"
         placeholder="Search for a movie..."

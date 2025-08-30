@@ -61,14 +61,14 @@ export default function MoviesList() {
     <section>
       <div className="px-4 py-4 flex flex-col md:flex-row justify-between items-center">
         <div className="flex items-center gap-2">
-          <h3 className="text-2xl font-semibold text-white">Popular</h3>
+          <h3 className="text-2xl font-semibold">Popular</h3>
           <img src={Popular} alt="" className="w-6 h-6" />
         </div>
         <div className="flex gap-4 items-center">
           <ul className="flex gap-4">
             {ratings.map((rate) => (
               <li
-                className={`cursor-pointer text-white ${
+                className={`cursor-pointer ${
                   rating === rate ? "movie_filtered_item" : ""
                 }`}
                 onClick={() => onRatingClick(rate)}

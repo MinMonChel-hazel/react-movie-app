@@ -11,7 +11,7 @@ function App() {
           <Navbar />
           <Search />
         </div>
-        <div className="bg-[#032541] min-h-screen pt-28">
+        <div className="movies_list min-h-screen pt-28">
           <MoviesList />
         </div>
       </div>

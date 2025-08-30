@@ -5,3 +5,31 @@
 @theme {
   --font-sans: "Kantumruy Pro", sans-serif;
 }
+
+:root {
+  --body_background: #101010;
+  --body_color: #032541;
+  --heading_color: #ffe400;
+}
+
+[data-theme="dark"] {
+  --body-background: #101010;
+  --body-color: #43d0ec;
+  --heading-color: #ffe400;
+}
+
+[data-theme="light"] {
+  --body-background: #fff;
+  --body-color: #032541;
+  --heading-color: #000;
+}
+
+.nav_bar {
+  background-color: var(--body-background);
+  color: var(--body-color);
+}
+
+.movies_list {
+  background-color: var(--body-background);
+  color: var(--body-color);
+}

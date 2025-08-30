@@ -5,7 +5,7 @@ export default function MovieCard({ movie }) {
   return (
     <a
       href={`https://www.themoviedb.org/movie/${movie.id}`}
-      className="cursor-pointer movie_card"
+      className="cursor-pointer rounded-xl movie_card"
       target="_blank"
     >
       <img
