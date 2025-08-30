@@ -1,6 +1,8 @@
-.active {
+.movie_filtered_item {
   font-weight: bold;
-  border-bottom: 1px solid #032541;
+  border-bottom: 1px solid white;
+  font-weight: 800;
+  transition: all 0.1s ease-in-out;
 }
 
 .movie_card {
